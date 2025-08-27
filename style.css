@@ -1,0 +1,705 @@
+/* ================================
+   Navbar - Coffee Chocolate Cream Theme
+   ================================ */
+.navbar {
+    background-color: #4B3621; /* Dark chocolate brown */
+    padding: 0.0rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar Brand / Logo */
+.navbar-brand {
+    color: #FFF8E7 !important; /* Cream color */
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #D9B382; /* Light coffee accent on hover */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #FFF8E7 !important; /* Cream text */
+    font-weight: 500;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D9B382 !important; /* Coffee accent on hover */
+}
+
+/* Navbar Toggler (for mobile) */
+.navbar-toggler {
+    border-color: #FFF8E7;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,248,231,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Optional: Add shadow when scrolling */
+.navbar.scrolled {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color: #3e2c1f; /* Slightly darker chocolate when scrolled */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+/*--------------------------------------------*/
+/* ================================
+   Home Section - Coffee Chocolate Cream Theme
+   ================================ */
+#home {
+    background-color: #FFF8E7; /* Cream background */
+    color: #4B3621; /* Dark chocolate text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#home h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4B3621; /* Dark chocolate */
+    margin-bottom: 1rem;
+}
+
+#home p.lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #6F4E37; /* Medium coffee shade */
+    margin-bottom: 2rem;
+}
+
+#home .btn-primary {
+    background-color: #6F4E37; /* Coffee brown */
+    border-color: #6F4E37;
+    color: #FFF8E7;
+    transition: all 0.3s ease;
+}
+
+#home .btn-primary:hover {
+    background-color: #5e442a; /* Darker chocolate on hover */
+    border-color: #5e442a;
+    color: #FFF8E7;
+}
+
+#home .btn-outline-primary {
+    color: #6F4E37;
+    border-color: #6F4E37;
+    transition: all 0.3s ease;
+}
+
+#home .btn-outline-primary:hover {
+    background-color: #6F4E37;
+    color: #FFF8E7;
+    border-color: #6F4E37;
+}
+
+#home p.mt-4 {
+    font-size: 1rem;
+    color: #5e442a; /* Slightly darker coffee tone */
+    margin-top: 1.5rem;
+}
+
+#home .bi {
+    color: #6F4E37; /* Social icons in coffee brown */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#home .bi:hover {
+    color: #D9B382; /* Light coffee accent on hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.2rem;
+    }
+    #home p.lead {
+        font-size: 1rem;
+    }
+    #home .btn-lg {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+/*-----------------------------------------------------------*/
+/* ================================
+   About Section - Coffee Chocolate Cream Theme
+   ================================ */
+#about {
+    background-color: #FFF8E7; /* Cream background */
+    color: #4B3621; /* Dark chocolate text */
+    padding: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#about h2,
+#about h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #4B3621; /* Dark chocolate heading */
+    margin-bottom: 2rem;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+#about h4 {
+    font-size: 1.75rem;
+}
+
+#about p.lead {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6F4E37; /* Medium coffee text */
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+/* Timeline styling */
+.timeline {
+    padding-left: 0; /* remove default list padding */
+    list-style: none;
+}
+
+.timeline li {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.timeline-icon {
+    flex-shrink: 0;
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-brown {
+    color: #6F4E37; /* Coffee brown icons */
+}
+
+.timeline-content h5 {
+    margin-bottom: 0.5rem;
+    color: #4B3621; /* Dark chocolate */
+    font-weight: 600;
+}
+
+.timeline-content p {
+    margin: 0.2rem 0;
+    line-height: 1.5;
+    color: #5e442a; /* Medium coffee */
+}
+
+.timeline-content p.text-muted {
+    color: #7B5E57; /* Lighter brown for secondary text */
+}
+
+.timeline-content p.text-secondary {
+    color: #5e442a; /* Medium coffee for grades/coursework */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2rem;
+    }
+    #about h4 {
+        font-size: 1.5rem;
+    }
+    #about p.lead {
+        font-size: 1rem;
+    }
+    .timeline-icon {
+        width: 40px;
+    }
+    .timeline li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/*--------------------------------------------------*/
+/* ================================
+   Education Timeline - Coffee Chocolate Cream Theme
+   ================================ */
+.timeline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.timeline li {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.timeline-icon {
+    flex-shrink: 0;
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-brown {
+    color: #6F4E37; /* Coffee brown for icons */
+}
+
+.timeline-content h5 {
+    margin-bottom: 0.5rem;
+    color: #4B3621; /* Dark chocolate heading */
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.timeline-content p {
+    margin: 0.2rem 0;
+    line-height: 1.5;
+    color: #5e442a; /* Medium coffee text */
+}
+
+.timeline-content p.text-muted {
+    color: #7B5E57; /* Lighter brown for secondary text */
+    font-size: 0.95rem;
+}
+
+.timeline-content p.text-secondary {
+    color: #5e442a; /* Medium coffee for grades/coursework */
+    font-size: 0.95rem;
+}
+
+/* ================================
+   Skills Section - Coffee Chocolate Cream Theme
+   ================================ */
+#skills {
+    background-color: #FFF8E7; /* Cream background */
+    color: #4B3621; /* Dark chocolate text */
+    padding: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#skills h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #4B3621; /* Dark chocolate heading */
+}
+
+.skill-card {
+    background-color: #F5EBDD; /* Light cream card */
+    border: 2px solid #6F4E37; /* Coffee brown border */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h5 {
+    font-weight: 600;
+    color: #4B3621; /* Dark chocolate */
+    margin-bottom: 1rem;
+}
+
+.skill-card img {
+    margin: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-card img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skill-card {
+        padding: 1rem;
+    }
+    .skill-card h5 {
+        font-size: 1rem;
+    }
+    .skill-card img {
+        width: 35px;
+    }
+}
+/*----------------------PROJECTS*/
+/* ================================
+   Projects Section - Coffee Chocolate Cream Theme
+   ================================ */
+#projects {
+    background-color: #FFF8E7; /* Cream background */
+    color: #4B3621; /* Dark chocolate text */
+    padding: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#projects h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #4B3621;
+    text-align: center;
+}
+
+#projects .card {
+    background-color: #fff3e6; /* Very light cream */
+    border: 2px solid #6F4E37; /* Coffee brown border */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(100, 50, 20, 0.15);
+}
+
+#projects .card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#projects .card-body {
+    text-align: center;
+}
+
+#projects .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4b2e2e; /* Chocolate */
+    margin-bottom: 8px;
+}
+
+#projects .card-text {
+    font-size: 0.95rem;
+    color: #6b4f4f; /* Soft brown */
+    margin-bottom: 12px;
+}
+
+#projects .btn.view-details {
+    background-color: #a9746e; /* Coffee brown */
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#projects .btn.view-details:hover {
+    background-color: #8b5f53;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   Modal Styling - Coffee Chocolate Cream Theme
+   ================================ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(75, 46, 46, 0.5); /* Semi-transparent chocolate overlay */
+    padding: 20px;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: #fff3e6; /* Cream background */
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 12px;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(100, 50, 20, 0.2);
+    animation: slideDown 0.3s;
+}
+
+.modal-content img.modal-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content h2.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b2e2e; /* Chocolate */
+    margin-bottom: 10px;
+}
+
+.modal-content p.modal-desc {
+    font-size: 1rem;
+    color: #6b4f4f; /* Soft brown */
+    margin-bottom: 8px;
+}
+
+.modal-content p strong {
+    color: #4b2e2e;
+}
+
+.modal-content .github-link {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #a9746e; /* Coffee */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modal-content .github-link:hover {
+    background-color: #8b5f53;
+    transform: translateY(-2px);
+}
+
+.modal .close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4b2e2e; /* Chocolate */
+    transition: color 0.3s;
+}
+
+.modal .close:hover {
+    color: #a9746e; /* Coffee */
+}
+
+/* ================================
+   Animations
+   ================================ */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-20px);}
+    to {transform: translateY(0);}
+}
+
+/* ================================
+   Responsive Adjustments
+   ================================ */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    #projects .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    #projects .card-img-top {
+        height: 150px;
+    }
+}
+/*------------------------*/
+/* ================================
+   Experience Section - Coffee Chocolate Cream Theme
+   ================================ */
+#experience {
+    background-color: #FFF8E7; /* Cream background */
+    color: #4B3621; /* Dark chocolate text */
+    padding: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#experience h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #4B3621;
+    text-align: center;
+}
+
+#experience .card {
+    background-color: #fff3e6; /* Light cream card */
+    border: 2px solid #6F4E37; /* Coffee brown border */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experience .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(100, 50, 20, 0.15);
+}
+
+#experience .card-body {
+    padding: 1.5rem;
+}
+
+#experience .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4B3621; /* Dark chocolate */
+    margin-bottom: 0.3rem;
+}
+
+#experience p.text-muted {
+    font-size: 0.95rem;
+    color: #6B4F4F; /* Soft brown */
+    margin-bottom: 0.2rem;
+}
+
+#experience p.text-secondary {
+    font-size: 0.9rem;
+    color: #5E442A; /* Medium coffee */
+}
+
+#experience .bi {
+    color: #6F4E37; /* Coffee brown icons */
+    transition: color 0.3s ease;
+}
+
+#experience .bi:hover {
+    color: #D9B382; /* Light coffee accent on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #experience .card {
+        margin-bottom: 1.5rem;
+    }
+    #experience h2 {
+        font-size: 2rem;
+    }
+}
+/*-----------------------------------------------*/
+/* ================================
+   Contact Section - Coffee Chocolate Cream Theme
+   ================================ */
+#contact {
+    background-color: #FFF8E7; /* Cream background */
+    color: #6B4F4F; /* Soft chocolate text */
+    padding: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #4B3621; /* Dark chocolate */
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6B4F4F; /* Medium chocolate/brown */
+    margin-bottom: 1rem;
+}
+
+#contact a {
+    color: #A9746E; /* Coffee accent for links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #4B3621; /* Dark chocolate on hover */
+}
+
+#contact .bi {
+    font-size: 1.8rem;
+    color: #4B3621; /* Dark chocolate icons */
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact .bi:hover {
+    color: #A9746E; /* Coffee accent hover */
+    transform: translateY(-4px);
+}
+
+#contact .container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ================================
+   Footer - Coffee Chocolate Cream Theme
+   ================================ */
+footer {
+    background-color: #4B3621; /* Dark chocolate */
+    color: #FFF8E7; /* Cream text */
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #A9746E; /* Coffee accent for links/icons */
+    font-size: 1.5rem;
+    margin: 0 0.3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFF8E7; /* Cream hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 0.95rem;
+    }
+
+    #contact .bi {
+        font-size: 1.5rem;
+    }
+
+    footer a {
+        font-size: 1.3rem;
+    }
+}
